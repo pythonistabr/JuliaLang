@@ -1,3 +1,5 @@
+##########################################################
+#  operators in julia
 +x	unary plus	the identity operation
 -x	unary minus	maps values to their additive inverses
 x + y	binary plus	performs addition
@@ -8,6 +10,7 @@ x ÷ y	integer divide	x / y, truncated to an integer
 x \ y	inverse divide	equivalent to y / x
 x ^ y	power	raises x to the yth power
 x % y	remainder	equivalent to rem(x,y)
+##########################################################
 
 #strings in julia
 my_name = "gustavo";
@@ -23,7 +26,7 @@ s1 = "Im am a string.";
 s2 = " And I am a string too.";
 
 println("$s1 $s2")#printing
-
+#---
 name = "jane";
 num_fingers = 10;
 num_toes = 10;
@@ -39,12 +42,15 @@ string("I don't now, but ",10," are too few cats!")
 s3 = "How many cats";
 s4 = " are too many cats?";
 
+
 # concatenation with *
 s3*s4
 
 # concatenation with another form
 "$s3$s4"
+# ---
 
+# -- dictionaries --
 #exp 1
 PhoneBook = Dict("jenny"=>"867-539", "GhostBusters"=>"555-2368")
 
@@ -62,6 +68,8 @@ array1 = ["gustavo", "pele","messi", "ronaldinho"]
 
 fibonacci = [1, 1, 2, 3, 5, 8, 13]
 
+
+# --- arrays ---
 # indexing arrays
 fibonacci[4]
 
@@ -78,6 +86,8 @@ array1
 
 array3D = rand(4, 2, 3)# 3D array
 
+
+#-- while loop --
 counter = 0;
 
 while counter<=10
@@ -103,7 +113,7 @@ end
 m, n = 4, 4;
 A = zeros(4, 4);
 
-#jeito 1
+# -- jeito 1 --
 for i in 1:m
     for j in 1:n
         A[i, j] = i+j;
@@ -112,14 +122,14 @@ end
 
 A      
 
-# jeito 2
+# -- jeito -- 2
 B = zeros(4,4)
 for i in 1:m, j in 1:n
     B[i, j] = i+j;
 end
 B
 
-#jeito 3
+# -- jeito -- 3
 
 C = [i + j for i in 1:3, j in 1:3]
 C
@@ -139,7 +149,7 @@ function say_hi(name);
 return
 end
 
-#using the function
+# -- using the function
 say_hi("gustavo")
 
 #Exp2
@@ -176,7 +186,7 @@ using PyCall;
 np = pyimport("numpy");
 plt = pyimport("matplotlib.pyplot");
 
-#ploting figures with matplotlib
+# -- ploting figures with matplotlib (pytho's libs)
 
 fig, ax = plt.subplots();
 ax.plot(values);
