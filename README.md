@@ -1,4 +1,4 @@
-# JuliaLang
+# Data processing with julkia
 
 # --- Data analisys with Julia and Jupyter-Notebook ---#
 
