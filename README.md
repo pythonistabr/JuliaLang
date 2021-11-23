@@ -1,9 +1,9 @@
-# Data processing with julkia
+# Data processing with julia
 
 # --- Data analisys with Julia and Jupyter-Notebook ---#
 
-A repository created for storing Scripts for handling
-and processing environmental data using Julia.
+Repository for storing environmental data processing scripts
+written in julia.
 
 
 by Gustavo Viana
