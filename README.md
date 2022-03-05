@@ -2,8 +2,9 @@
 
 # --- Data analisys with Julia and Jupyter-Notebook ---#
 
-Repository for storing environmental data processing scripts
-written in julia.
+Este repositório destina-se a armazenar scripts e funções(em JuliaLang) voltados para o processamento
+de dados ambientais com foco em Oceanografia Física e Meteorologia. 
 
 
-by Gustavo Viana
+by pythonistabr
+email: gustavo.oceanografia@gmail.com
